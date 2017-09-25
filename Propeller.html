@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Propeller</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	position: relative;
+	background: #fff;
+}
+
+.propeller {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+  width: 0px;
+  height: 0px;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #fff #00f #fff #00f;
+  border-radius: 50%;
+
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+
+  -webkit-animation-name: rotateCircle;
+  -moz-animation-name: rotateCircle;
+  -o-animation-name: rotateCircle;
+  animation-name: rotateCircle;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotateCircle {
+  from {
+    transform: rotate(0deg); 
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotateCircle {
+  from {
+    transform: rotate(0deg); 
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotateCircle {
+  from {
+    transform: rotate(0deg); 
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg); 
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.propeller2 {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+  width: 0px;
+  height: 0px;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #fff #00f #fff #00f;
+  border-radius: 50%;
+}
+#vbody, #vbody2 {
+  border-top:2px #0000ff solid;
+  border-bottom:2px #0000ff solid;
+  padding:2px;
+  width:54px;
+  margin:10px;
+}
+#hbody {
+  border-top:1px #aaaaaa solid;
+  border-left:1px #aaaaaa solid;
+  border-right:1px #aaaaaa solid;
+  height:50px;
+  width:80px;
+  margin:10px;
+}
+.heater {
+position: relative;
+  top: -3px;
+  left:2px;
+  border:2px #ff0000 solid;
+  background-color:#ff0000;
+  height:1px;
+  width:70px;
+  box-shadow: 0 0 10px rgba(250,150,150, .9);
+}
+</style>
+
+</head>
+<body>
+  <div id="vbody">
+    <div id="ventilator" class="propeller"></div>
+  </div>
+  <div id="vbody2">
+    <div id="ventilator2" class="propeller2"></div>
+  </div>
+  
+  <div id="hbody">
+    <div id="heater" class="heater"></div>
+  </div>
+</body>
+</html>

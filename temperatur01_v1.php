@@ -1,0 +1,1 @@
+#!/usr/bin/php<?phpfor ($i=0;$i<30;$i++) {$temp01 = exec('cat /sys/bus/w1/devices/28-021562a3a0ff/w1_slave |grep t=');$temp01 = explode('t=',$temp01);$temp01 = $temp01[1] / 1000;$temp01 = number_format($temp01,1,",",".")."°C";echo ($i + 1).". Temperatur ".$temp01."\n";}?>
